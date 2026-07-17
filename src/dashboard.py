@@ -25,14 +25,7 @@ if str(SRC_DIR) not in sys.path:
 try:
     import _env  # must be first: silence TF startup logs
 except ModuleNotFoundError:
-    try:
-        import src._env as _env
-    except ModuleNotFoundError:
-        import os
-        st.error(f"Diagnostic Error Log:")
-        st.error(f"Current Working Directory: {os.getcwd()}")
-        st.error(f"Files in src/ directory: {os.listdir(SRC_DIR)}")
-        raise
+    import src._env as _env
 
 from config import (
     CASES_DIR,
