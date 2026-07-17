@@ -35,17 +35,7 @@ data/preprocessed/
 
 
 # ── Trained Model Weights ─────────────────────────────────────
-models/*
-!models/.gitkeep
-*.h5
-*.keras
-*.pt
-*.pth
-*.ckpt
-*.ckpt.index
-*.ckpt.data-*
 checkpoints/
-saved_model/
 
 
 # ── Pipeline Output Artifacts ─────────────────────────────────
@@ -54,15 +44,16 @@ outputs/plots/*
 !outputs/plots/.gitkeep
 
 # Per-case scan exports
-outputs/cases/*
-!outputs/cases/.gitkeep
 
 # Temporary upload buffer (Streamlit inference)
 outputs/_upload_tmp/
 
 # Generated CSV / JSON records (reproducible from re-running the pipeline)
+# We ignore other CSV/JSON files, but explicitly commit the active clinical database & metrics
 outputs/*.csv
+!outputs/diagnostic_results.csv
 outputs/*.json
+!outputs/evaluation_metrics.json
 
 
 # ── Logs ─────────────────────────────────────────────────────
