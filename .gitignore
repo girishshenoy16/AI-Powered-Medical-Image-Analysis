@@ -35,7 +35,8 @@ data/preprocessed/
 
 
 # ── Trained Model Weights ─────────────────────────────────────
-models/
+models/*
+!models/.gitkeep
 *.h5
 *.keras
 *.pt
@@ -49,10 +50,12 @@ saved_model/
 
 # ── Pipeline Output Artifacts ─────────────────────────────────
 # Evaluation plots (saved locally for reports)
-outputs/plots/
+outputs/plots/*
+!outputs/plots/.gitkeep
 
 # Per-case scan exports
-outputs/cases/
+outputs/cases/*
+!outputs/cases/.gitkeep
 
 # Temporary upload buffer (Streamlit inference)
 outputs/_upload_tmp/
@@ -79,7 +82,6 @@ task.md
 .env
 .env.local
 .env.*.local
-src/_env.py
 
 
 # ── IDE & Editor ─────────────────────────────────────────────
@@ -114,7 +116,10 @@ lightning_logs/
 
 
 # ── Streamlit ─────────────────────────────────────────────────
-.streamlit/secrets.toml
+# Ignore all local configurations and credentials in the .streamlit folder
+.streamlit/*
+# Except the theme and layout configuration file needed for Streamlit Cloud deployment
+!.streamlit/config.toml
 
 
 # ── Testing & Coverage ───────────────────────────────────────
