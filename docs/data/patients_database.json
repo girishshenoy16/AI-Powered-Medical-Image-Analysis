@@ -1,0 +1,439 @@
+{
+  "generated": true,
+  "model": "MobileNetV2 (transfer learning, frozen backbone)",
+  "count": 24,
+  "patients": [
+    {
+      "id": "patient_001",
+      "patient_id": "PX-79678",
+      "name": "Noah Nakamura",
+      "age": 8,
+      "gender": "Female",
+      "scanner": "Philips",
+      "study_date": "2026-07-15",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.365,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_001_original.png",
+        "preprocessed": "assets/images/patient_001_preprocessed.png",
+        "gradcam": "assets/images/patient_001_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_002",
+      "patient_id": "PX-26276",
+      "name": "Zara Ahmed",
+      "age": 18,
+      "gender": "Female",
+      "scanner": "GE",
+      "study_date": "2026-06-12",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.3781,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_002_original.png",
+        "preprocessed": "assets/images/patient_002_preprocessed.png",
+        "gradcam": "assets/images/patient_002_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_003",
+      "patient_id": "PX-36364",
+      "name": "Lucas Nakamura",
+      "age": 54,
+      "gender": "Female",
+      "scanner": "Philips",
+      "study_date": "2026-04-28",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8957,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_003_original.png",
+        "preprocessed": "assets/images/patient_003_preprocessed.png",
+        "gradcam": "assets/images/patient_003_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_004",
+      "patient_id": "PX-63343",
+      "name": "Mei M\u00fcller",
+      "age": 6,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-05-28",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.9172,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_004_original.png",
+        "preprocessed": "assets/images/patient_004_preprocessed.png",
+        "gradcam": "assets/images/patient_004_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_005",
+      "patient_id": "PX-76275",
+      "name": "Lucas Singh",
+      "age": 54,
+      "gender": "Male",
+      "scanner": "GE",
+      "study_date": "2026-11-20",
+      "true_label": "NORMAL",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.2658,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_005_original.png",
+        "preprocessed": "assets/images/patient_005_preprocessed.png",
+        "gradcam": "assets/images/patient_005_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_006",
+      "patient_id": "PX-40225",
+      "name": "Mei Ali",
+      "age": 47,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-06-16",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8991,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_006_original.png",
+        "preprocessed": "assets/images/patient_006_preprocessed.png",
+        "gradcam": "assets/images/patient_006_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_007",
+      "patient_id": "PX-88051",
+      "name": "Mohammed Johnson",
+      "age": 34,
+      "gender": "Female",
+      "scanner": "Philips",
+      "study_date": "2026-06-11",
+      "true_label": "PNEUMONIA",
+      "prediction": "NORMAL",
+      "confidence": 0.9569,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_007_original.png",
+        "preprocessed": "assets/images/patient_007_preprocessed.png",
+        "gradcam": "assets/images/patient_007_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_008",
+      "patient_id": "PX-70943",
+      "name": "Sofia Davis",
+      "age": 90,
+      "gender": "Male",
+      "scanner": "GE",
+      "study_date": "2026-04-19",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.5946,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_008_original.png",
+        "preprocessed": "assets/images/patient_008_preprocessed.png",
+        "gradcam": "assets/images/patient_008_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_009",
+      "patient_id": "PX-99990",
+      "name": "Wei Khan",
+      "age": 23,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-08-23",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.925,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_009_original.png",
+        "preprocessed": "assets/images/patient_009_preprocessed.png",
+        "gradcam": "assets/images/patient_009_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_010",
+      "patient_id": "PX-40891",
+      "name": "Fatima Tan",
+      "age": 11,
+      "gender": "Male",
+      "scanner": "GE",
+      "study_date": "2026-04-23",
+      "true_label": "NORMAL",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.2555,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_010_original.png",
+        "preprocessed": "assets/images/patient_010_preprocessed.png",
+        "gradcam": "assets/images/patient_010_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_011",
+      "patient_id": "PX-70445",
+      "name": "Isla Hassan",
+      "age": 62,
+      "gender": "Female",
+      "scanner": "Philips",
+      "study_date": "2026-07-07",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.2228,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_011_original.png",
+        "preprocessed": "assets/images/patient_011_preprocessed.png",
+        "gradcam": "assets/images/patient_011_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_012",
+      "patient_id": "PX-19286",
+      "name": "Emma Brown",
+      "age": 36,
+      "gender": "Male",
+      "scanner": "Philips",
+      "study_date": "2026-11-24",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8436,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_012_original.png",
+        "preprocessed": "assets/images/patient_012_preprocessed.png",
+        "gradcam": "assets/images/patient_012_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_013",
+      "patient_id": "PX-42771",
+      "name": "Chen Khan",
+      "age": 64,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-07-06",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.4523,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_013_original.png",
+        "preprocessed": "assets/images/patient_013_preprocessed.png",
+        "gradcam": "assets/images/patient_013_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_014",
+      "patient_id": "PX-77537",
+      "name": "Mei Silva",
+      "age": 46,
+      "gender": "Male",
+      "scanner": "Philips",
+      "study_date": "2026-11-18",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.8482,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_014_original.png",
+        "preprocessed": "assets/images/patient_014_preprocessed.png",
+        "gradcam": "assets/images/patient_014_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_015",
+      "patient_id": "PX-59408",
+      "name": "Zara Ahmed",
+      "age": 82,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-04-02",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.6196,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_015_original.png",
+        "preprocessed": "assets/images/patient_015_preprocessed.png",
+        "gradcam": "assets/images/patient_015_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_016",
+      "patient_id": "PX-77860",
+      "name": "Liam M\u00fcller",
+      "age": 82,
+      "gender": "Male",
+      "scanner": "Philips",
+      "study_date": "2026-03-08",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.6498,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_016_original.png",
+        "preprocessed": "assets/images/patient_016_preprocessed.png",
+        "gradcam": "assets/images/patient_016_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_017",
+      "patient_id": "PX-73969",
+      "name": "Ravi Ahmed",
+      "age": 22,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-03-20",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8094,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_017_original.png",
+        "preprocessed": "assets/images/patient_017_preprocessed.png",
+        "gradcam": "assets/images/patient_017_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_018",
+      "patient_id": "PX-23670",
+      "name": "Isla Martin",
+      "age": 78,
+      "gender": "Male",
+      "scanner": "Philips",
+      "study_date": "2026-02-18",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8637,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_018_original.png",
+        "preprocessed": "assets/images/patient_018_preprocessed.png",
+        "gradcam": "assets/images/patient_018_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_019",
+      "patient_id": "PX-33570",
+      "name": "Ava Cruz",
+      "age": 41,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-05-01",
+      "true_label": "PNEUMONIA",
+      "prediction": "NORMAL",
+      "confidence": 0.8825,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_019_original.png",
+        "preprocessed": "assets/images/patient_019_preprocessed.png",
+        "gradcam": "assets/images/patient_019_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_020",
+      "patient_id": "PX-33887",
+      "name": "Maria Khan",
+      "age": 82,
+      "gender": "Male",
+      "scanner": "Philips",
+      "study_date": "2026-04-21",
+      "true_label": "NORMAL",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.2344,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_020_original.png",
+        "preprocessed": "assets/images/patient_020_preprocessed.png",
+        "gradcam": "assets/images/patient_020_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_021",
+      "patient_id": "PX-34916",
+      "name": "Ali Rossi",
+      "age": 61,
+      "gender": "Female",
+      "scanner": "GE",
+      "study_date": "2026-12-15",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8335,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_021_original.png",
+        "preprocessed": "assets/images/patient_021_preprocessed.png",
+        "gradcam": "assets/images/patient_021_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_022",
+      "patient_id": "PX-93139",
+      "name": "Ali Cruz",
+      "age": 28,
+      "gender": "Female",
+      "scanner": "Philips",
+      "study_date": "2026-08-28",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.5994,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_022_original.png",
+        "preprocessed": "assets/images/patient_022_preprocessed.png",
+        "gradcam": "assets/images/patient_022_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_023",
+      "patient_id": "PX-64843",
+      "name": "Isla Cruz",
+      "age": 18,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-05-13",
+      "true_label": "NORMAL",
+      "prediction": "NORMAL",
+      "confidence": 0.8639,
+      "findings": "No significant parenchymal opacification detected. Routine clinical correlation advised; repeat imaging if symptoms persist.",
+      "images": {
+        "original": "assets/images/patient_023_original.png",
+        "preprocessed": "assets/images/patient_023_preprocessed.png",
+        "gradcam": "assets/images/patient_023_gradcam.png"
+      }
+    },
+    {
+      "id": "patient_024",
+      "patient_id": "PX-35812",
+      "name": "Sofia Okafor",
+      "age": 59,
+      "gender": "Male",
+      "scanner": "Siemens",
+      "study_date": "2026-06-22",
+      "true_label": "PNEUMONIA",
+      "prediction": "PNEUMONIA",
+      "confidence": 0.4972,
+      "findings": "Radiographic opacity patterns consistent with pneumonia. Recommend clinical correlation, inflammatory marker workup, and radiologist review; consider isolation if infectious.",
+      "images": {
+        "original": "assets/images/patient_024_original.png",
+        "preprocessed": "assets/images/patient_024_preprocessed.png",
+        "gradcam": "assets/images/patient_024_gradcam.png"
+      }
+    }
+  ]
+}

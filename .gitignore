@@ -1,0 +1,144 @@
+# =============================================================
+#  AI-Powered Medical Image Analysis — .gitignore
+#  Updated: 2026-07-17
+# =============================================================
+
+
+# ── Virtual Environments ──────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+
+# ── Python Cache & Build Artifacts ───────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+dist/
+build/
+*.pyd
+*.pyo
+
+
+# ── Dataset Directories ───────────────────────────────────────
+# Raw clinical images (too large for Git; download from Kaggle)
+data/raw/
+
+# Preprocessed/augmented scans saved to disk
+data/processed/
+data/preprocessed/
+
+
+# ── Trained Model Weights ─────────────────────────────────────
+models/
+*.h5
+*.keras
+*.pt
+*.pth
+*.ckpt
+*.ckpt.index
+*.ckpt.data-*
+checkpoints/
+saved_model/
+
+
+# ── Pipeline Output Artifacts ─────────────────────────────────
+# Evaluation plots (saved locally for reports)
+outputs/plots/
+
+# Per-case scan exports
+outputs/cases/
+
+# Temporary upload buffer (Streamlit inference)
+outputs/_upload_tmp/
+
+# Generated CSV / JSON records (reproducible from re-running the pipeline)
+outputs/*.csv
+outputs/*.json
+
+
+# ── Logs ─────────────────────────────────────────────────────
+logs/
+*.log
+*.log.*
+smoke.log
+train.log
+
+
+# ── Project Planning & Task Tracking ──────────────────────────
+implementation_plan.md
+task.md
+
+
+# ── Local Environment & Secrets ──────────────────────────────
+.env
+.env.local
+.env.*.local
+src/_env.py
+
+
+# ── IDE & Editor ─────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+*.code-workspace
+
+
+# ── Operating System ─────────────────────────────────────────
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+
+# ── Jupyter Notebooks ─────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+
+# ── Experiment & ML Tracking ─────────────────────────────────
+wandb/
+mlruns/
+mlflow/
+runs/
+lightning_logs/
+
+
+# ── Streamlit ─────────────────────────────────────────────────
+.streamlit/secrets.toml
+
+
+# ── Testing & Coverage ───────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+
+# ── Profiling ────────────────────────────────────────────────
+*.prof
+*.lprof
+
+
+# ─────────────────────────────────────────────────────────────
+#  WHAT IS COMMITTED (intentionally NOT ignored)
+# ─────────────────────────────────────────────────────────────
+#  ✅ src/*.py              — all source code modules
+#  ✅ main.py               — pipeline entry point
+#  ✅ requirements.txt      — dependency list
+#  ✅ README.md             — portfolio documentation
+#  ✅ docs/index.html       — GitHub Pages web dashboard
+#  ✅ docs/data/patients_database.json  — static demo data
+#  ✅ docs/assets/          — pre-saved demo scans & overlays
+#  ✅ docs/project_report.md
+#  ✅ LICENSE
+# ─────────────────────────────────────────────────────────────
