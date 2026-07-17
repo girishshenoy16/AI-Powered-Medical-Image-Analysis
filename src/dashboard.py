@@ -18,11 +18,11 @@ import pandas as pd
 import streamlit as st
 from PIL import Image
 
-import _env  # must be first: silence TF startup logs
-
 SRC_DIR = Path(__file__).resolve().parent
 if str(SRC_DIR) not in sys.path:
     sys.path.insert(0, str(SRC_DIR))
+
+import _env  # must be first: silence TF startup logs
 
 from config import (
     CASES_DIR,
